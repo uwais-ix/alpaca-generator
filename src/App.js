@@ -1,8 +1,8 @@
+import Assets from './assetsLoader/assetsLoader';
+
 function App() {
-  return (
-    <>
-    </>
-  );
+  console.log(Assets);
+  return <></>;
 }
 
 export default App;
