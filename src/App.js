@@ -1,8 +1,10 @@
-import Assets from './assetsLoader/assetsLoader';
-
+import AlpacaProvider from './store/AlpacaProvider';
 function App() {
-  console.log(Assets);
-  return <></>;
+  return (
+    <AlpacaProvider>
+      <h1>some stuff</h1>
+    </AlpacaProvider>
+  );
 }
 
 export default App;

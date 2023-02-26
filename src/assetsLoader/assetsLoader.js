@@ -9,15 +9,30 @@ import neck from './neck';
 import nose from './nose';
 
 const Assets = {
-  accessories,
-  backgrounds,
-  ears,
-  eyes,
-  hair,
-  leg,
-  mouth,
-  neck,
-  nose,
+  accessories: accessories,
+  backgrounds: backgrounds,
+  ears: ears,
+  eyes: eyes,
+  hair: hair,
+  leg: leg,
+  mouth: mouth,
+  neck: neck,
+  nose: nose,
 };
 
-export default Assets;
+const startingState = {
+  initial: {
+    accessories: 'flower',
+    backgrounds: 'blue50',
+    ears: 'default',
+    eyes: 'default',
+    hair: 'default',
+    leg: 'default',
+    mouth: 'default',
+    neck: 'default',
+    nose: 'nose',
+  },
+  Assets,
+};
+
+export default startingState;
