@@ -1,8 +1,12 @@
 import AlpacaProvider from './store/AlpacaProvider';
+import ImageGenerator from './components/ImageGenerator';
+
 function App() {
   return (
     <AlpacaProvider>
-      <h1>some stuff</h1>
+      <div>
+        <ImageGenerator/>
+      </div>
     </AlpacaProvider>
   );
 }

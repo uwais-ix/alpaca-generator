@@ -22,7 +22,7 @@ const Assets = {
 
 const startingState = {
   initial: {
-    accessories: 'flower',
+    accessories: 'null:',
     backgrounds: 'blue50',
     ears: 'default',
     eyes: 'default',

@@ -1,12 +1,11 @@
 import {useContext} from 'react';
-import {useImmerReducer} from 'use-immer';
 import {initialState, reducerFunc} from './AppReducer';
 import {AppContext, AppContextDispatcher} from './AppContext';
+import { useImmerReducer } from 'use-immer';
 
 const AlpacaProvider = (props) => {
-  const [appReducer, appDispatcher] = useImmerReducer(
-    reducerFunc,initialState
-  );
+  const [appReducer, appDispatcher] = useImmerReducer(reducerFunc, initialState);
+
   return (
     <AppContext.Provider value={appReducer}>
       <AppContextDispatcher.Provider value={appDispatcher}>
