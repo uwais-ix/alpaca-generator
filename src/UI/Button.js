@@ -1,9 +1,6 @@
 import React from 'react';
 
 const Button = (props) => {
-  // option buttons style
-  const optionStyle = '';
-
   // action button sytle
   const actionStyle = props.actionButton ? 'mr-4' : '';
 
