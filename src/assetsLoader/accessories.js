@@ -1,7 +1,7 @@
 import addImageUrlToObject from '../utils/addImageUrl';
 
 const PATH = '/accessories/';
-const KEYS = ['earings', 'flower', 'glasses', 'headphone', 'null:'];
+const KEYS = ['earings', 'flower', 'glasses', 'headphone'];
 
 const accessories = {};
 

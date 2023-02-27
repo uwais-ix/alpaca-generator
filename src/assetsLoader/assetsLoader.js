@@ -22,7 +22,7 @@ const Assets = {
 
 const startingState = {
   initial: {
-    accessories: 'null:',
+    accessories: 'headphone',
     backgrounds: 'blue50',
     ears: 'default',
     eyes: 'default',
