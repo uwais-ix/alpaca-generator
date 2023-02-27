@@ -9,6 +9,7 @@ const Actions = forwardRef((props, ref) => {
   return (
     <div className='flex'>
       <Button
+        actionButton={true}
         onClick={() => {
           dispatch({type: 'randomize'});
         }}
@@ -16,6 +17,7 @@ const Actions = forwardRef((props, ref) => {
         Randomize
       </Button>
       <Button
+        actionButton={true}
         onClick={() => {
           captureElement(ref.current);
         }}

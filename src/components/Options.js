@@ -23,6 +23,7 @@ const Controls = () => {
       for (let option in assets[part]) {
         options.push(
           <Button
+            selected={option===current[part]}
             key={`${option}`}
             onClick={() => {
               dispatcher({type: part, payload: option});
@@ -37,6 +38,7 @@ const Controls = () => {
     // body parts
     parts.push(
       <Button
+        selected={part===selected}
         key={part}
         onClick={() => {
           setSelected(part);
@@ -50,7 +52,7 @@ const Controls = () => {
 
   return (
     <>
-      <div>{parts.map((part) => part)}</div>
+      <div className='mb-10'>{parts.map((part) => part)}</div>
       <div>{options.map((option) => option)}</div>
     </>
   );

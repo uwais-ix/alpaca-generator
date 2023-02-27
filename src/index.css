@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply flex items-center justify-center bg-slate-200;
+  }
+}
 .--backgrounds {
   position: relative;
 }

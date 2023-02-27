@@ -22,7 +22,7 @@ const ImageGenerator = forwardRef((props, ref) => {
 
   return (
     <div
-      className='relative block border-lime-700 border-4 max-w-fit'
+      className='relative block border-slate-400 rounded-lg shadow-md border-4 max-w-lg mb-5'
       ref={ref}
     >
       {arr.map((val) => val)}

@@ -1,12 +1,17 @@
 import React from 'react';
 
 const Button = (props) => {
-  const style1 = '';
-  const style2 = '';
+  // option buttons style
+  const optionStyle = '';
+
+  // action button sytle
+  const actionStyle = props.actionButton ? 'mr-4' : '';
+
+  const selectedStyle = props.selected ? 'bg-blue-100' : '';
 
   return (
     <button
-      className={`bg-slate-500 m-2 px-3 py-1 rounded-md text-center ${props.className}`}
+      className={`text-blue-800 border-blue-600 border-2 hover:scale-105 hover:shadow-sm hover:text-slate-800 m-2 px-3 py-1 rounded-md text-center capitalize font-sans active:bg-blue-400 duration-150 ${selectedStyle} ${actionStyle} ${props.className}`}
       onClick={props.onClick}
     >
       {props.children}
