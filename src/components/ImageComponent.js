@@ -5,7 +5,7 @@ const ImageComponent = ({imgUrl, className}) => {
     <img
       src={imgUrl}
       alt=''
-      className={`absolute z-10 ${className}`}
+      className={`absolute top-0 left-0 z-10 ${className}`}
     />
   );
 };

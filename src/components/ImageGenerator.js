@@ -19,7 +19,11 @@ const ImageGenerator = (props) => {
     );
   }
 
-  return <div className='m-8 relative'>{arr.map((val) => val)}</div>;
+  return (
+    <div className='relative block border-lime-700 border-4 max-w-fit'>
+      {arr.map((val) => val)}
+    </div>
+  );
 };
 
 export default ImageGenerator;

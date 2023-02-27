@@ -6,10 +6,11 @@ export const initialState = {
 };
 
 export const reducerFunc = (state, action) => {
+  // validate action type
   switch (action.type) {
     case 'accessories':
       break;
-    case 'backgrounds': 
+    case 'backgrounds':
       break;
     case 'ears':
       break;
@@ -28,4 +29,7 @@ export const reducerFunc = (state, action) => {
     default:
       throw Error(`store/AppReducer.js || Unknown Action Type ${action.type}`);
   }
+
+  // update current state
+  state.current[action.type] = action.payload;
 };
