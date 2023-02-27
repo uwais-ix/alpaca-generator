@@ -1,7 +1,8 @@
 import {useApp} from '../store/AlpacaProvider';
 import ImageComponent from './ImageComponent';
+import {forwardRef} from 'react';
 
-const ImageGenerator = (props) => {
+const ImageGenerator = forwardRef((props, ref) => {
   const {current, assets} = useApp();
   const arr = [];
 
@@ -20,10 +21,13 @@ const ImageGenerator = (props) => {
   }
 
   return (
-    <div className='relative block border-lime-700 border-4 max-w-fit'>
+    <div
+      className='relative block border-lime-700 border-4 max-w-fit'
+      ref={ref}
+    >
       {arr.map((val) => val)}
     </div>
   );
-};
+});
 
 export default ImageGenerator;
